@@ -1,0 +1,5 @@
+---
+deployment:
+  tasks:
+    - export DEPLOYPATH=/home/u2188066/public_html/gemastik.infiniteuny.id
+    - /bin/cp -r * $DEPLOYPATH
