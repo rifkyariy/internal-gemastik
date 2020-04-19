@@ -2536,8 +2536,10 @@ p {
   padding: 40px 20px 52px;
   background-color: #fff; }
   .single-features .features-title-icon .features-title a {
-    font-size: 36px;
+    font-weight: bolder !important;
+    font-size: 24px;
     line-height: 45px;
+    padding-right: 4%;
     color: #121212;
     -webkit-transition: all 0.3s ease-out 0s;
     -moz-transition: all 0.3s ease-out 0s;
@@ -3245,3 +3247,19 @@ p.form-message.success, p.form-message.error {
     background-color: #2e8163; }
 
 /*# sourceMappingURL=style.css.map */
+
+/* custom */
+
+.f-right {
+  float: right;
+}
+
+.flip-180 {
+  margin-top: 5% !important;
+  rotate: 180deg;
+}
+
+.gemastiklogo {
+  width: 100%;
+  text-align: center;
+}

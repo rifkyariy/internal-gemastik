@@ -67,8 +67,8 @@
                 <div class="col-lg-12">
                     <nav class="navbar navbar-expand-lg">
 
-                        <a class="navbar-brand" href="#">
-                            <img src="images/logo.svg" alt="Logo">
+                        <a class="navbar-brand white" href="#">
+                            <img src="{{ asset('images/logo_infinite.svg') }}" alt="">
                         </a>
 
                         <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarTwo"
@@ -79,20 +79,20 @@
                         </button>
 
                         <div class="collapse navbar-collapse sub-menu-bar" id="navbarTwo">
-                            <ul class="navbar-nav m-auto">
-                                <li class="nav-item active"><a class="page-scroll" href="#home">home</a></li>
-                                <li class="nav-item"><a class="page-scroll" href="#services">Services</a></li>
-                                <li class="nav-item"><a class="page-scroll" href="#portfolio">Portfolio</a></li>
-                                <li class="nav-item"><a class="page-scroll" href="#pricing">Pricing</a></li>
-                                <li class="nav-item"><a class="page-scroll" href="#about">About</a></li>
+                            <ul class="navbar-nav  f-right">
+                                <li class="nav-item active"><a class="page-scroll" href="#home">Home</a></li>
+                                <li class="nav-item"><a class="page-scroll" href="#tentanggemastik">Tentang Gemastik</a></li>
+                                <li class="nav-item"><a class="page-scroll" href="#bidanglomba">Bidang Lomba</a></li>
+                                <li class="nav-item"><a class="page-scroll" href="#faq">FAQ</a></li>
+                                {{-- <li class="nav-item"><a class="page-scroll" href="#about">About</a></li>
                                 <li class="nav-item"><a class="page-scroll" href="#team">Team</a></li>
-                                <li class="nav-item"><a class="page-scroll" href="#contact">Contact</a></li>
+                                <li class="nav-item"><a class="page-scroll" href="#contact">Contact</a></li> --}}
                             </ul>
                         </div>
 
                         <div class="navbar-btn d-none d-sm-inline-block">
                             <ul>
-                                <li><a class="solid" href="#">Download</a></li>
+                                <li><a class="solid" href="#">Login</a></li>
                             </ul>
                         </div>
                     </nav> <!-- navbar -->
@@ -142,7 +142,7 @@
                         <div class="row">
                             <div class="col-lg-6">
                                 <div class="slider-content">
-                                    <h1 class="title">Crafted for Business</h1>
+                                    <h1 class="title">We Want U</h1>
                                     <p class="text">We blend insights and strategy to create digital products for
                                         forward-thinking organisations.</p>
                                     <ul class="slider-btn rounded-buttons">
@@ -195,374 +195,70 @@
 
     <!--====== SLIDER PART ENDS ======-->
 
-    <!--====== FEATRES TWO PART START ======-->
+    <!--====== Tentang Gemastik PART START ======-->
 
-    <section id="services" class="features-area">
+    <section id="tentanggemastik" class="testimonial-area">
+        <div class="container">
+            <div class="row justify-content-between">
+                <div class="col-xl-5 col-lg-6">
+                    <div class="testimonial-left-content mt-45">
+                        <h6 class="sub-title">Apa itu</h6>
+                        <h4 class="title">Gemastik</h4>
+                        <ul class="testimonial-line">
+                            <li></li>
+                            <li></li>
+                            <li></li>
+                            <li></li>
+                        </ul>
+                        <p class="text">
+                            <b>GEMASTIK</b> (Pagelaran Mahasiswa Nasional Bidang Tekonologi Informasi dan Komunikasi), merupakan program Direktorat Kemahasiswaan, Direktorat Jenderal Pembelajaran dan Kemahasiswaan Kementerian Riset, Teknologi dan Pendidikan Tinggi. Program ini ditujukan untuk meningkatkan kompetensi mahasiswa Indonesia, sehingga mampu mengambil peran sebagai agen perubahan dalam memajukan TIK dan pemanfaatannya, baik ketika masih dalam masa studi maupun kelak sesudah lulus studi.
+                        </p>
+                    </div> <!-- testimonial left content -->
+                </div>
+                <div class="col-lg-6">
+                    <div class="testimonial-right-content mt-50">
+                        <div class="quota flip-180">
+                            <i class="lni lni-cup"></i>
+                        </div>
+                        <div class="testimonial-content-wrapper testimonial-active">
+                            <div class="single-testimonial">
+                                <img class="gemastiklogo" src="{{ asset('images/logo-gemastik-alt.png') }}" alt="" srcset="">
+                            </div> <!-- single testimonial -->
+                            
+                        </div> <!-- testimonial content wrapper -->
+                    </div> <!-- testimonial right content -->
+                </div>
+            </div> <!-- row -->
+        </div> <!-- container -->
+    </section>
+
+    <!--====== TESTIMONIAL PART ENDS ======-->
+
+    <!--====== Bidang Lomba PART START ======-->
+
+    <section id="bidanglomba" class="features-area">
         <div class="container">
             <div class="row justify-content-center">
                 <div class="col-lg-6 col-md-10">
                     <div class="section-title text-center pb-10">
-                        <h3 class="title">Our Services</h3>
-                        <p class="text">Stop wasting time and money designing and managing a website that doesn’t get
-                            results. Happiness guaranteed!</p>
+                        <h3 class="title">Bidang Lomba</h3>
+                        <p class="text">
+                            Jadi di Gemastik nanti bakal ada bidang lomba apa aja sih ?
+                        </p>
                     </div> <!-- row -->
                 </div>
             </div> <!-- row -->
-            <div class="row justify-content-center">
-                <div class="col-lg-4 col-md-7 col-sm-9">
-                    <div class="single-features mt-40">
-                        <div class="features-title-icon d-flex justify-content-between">
-                            <h4 class="features-title"><a href="#">Graphics Design</a></h4>
-                            <div class="features-icon">
-                                <i class="lni lni-brush"></i>
-                                <img class="shape" src="images/f-shape-1.svg" alt="Shape">
-                            </div>
-                        </div>
-                        <div class="features-content">
-                            <p class="text">Short description for the ones who look for something new. Short description
-                                for the ones who look for something new.</p>
-                            <a class="features-btn" href="#">LEARN MORE</a>
-                        </div>
-                    </div> <!-- single features -->
-                </div>
-                <div class="col-lg-4 col-md-7 col-sm-9">
-                    <div class="single-features mt-40">
-                        <div class="features-title-icon d-flex justify-content-between">
-                            <h4 class="features-title"><a href="#">Website Design</a></h4>
-                            <div class="features-icon">
-                                <i class="lni lni-layout"></i>
-                                <img class="shape" src="images/f-shape-1.svg" alt="Shape">
-                            </div>
-                        </div>
-                        <div class="features-content">
-                            <p class="text">Short description for the ones who look for something new. Short description
-                                for the ones who look for something new.</p>
-                            <a class="features-btn" href="#">LEARN MORE</a>
-                        </div>
-                    </div> <!-- single features -->
-                </div>
-                <div class="col-lg-4 col-md-7 col-sm-9">
-                    <div class="single-features mt-40">
-                        <div class="features-title-icon d-flex justify-content-between">
-                            <h4 class="features-title"><a href="#">Digital Marketing</a></h4>
-                            <div class="features-icon">
-                                <i class="lni lni-bolt"></i>
-                                <img class="shape" src="images/f-shape-1.svg" alt="Shape">
-                            </div>
-                        </div>
-                        <div class="features-content">
-                            <p class="text">Short description for the ones who look for something new. Short description
-                                for the ones who look for something new.</p>
-                            <a class="features-btn" href="#">LEARN MORE</a>
-                        </div>
-                    </div> <!-- single features -->
-                </div>
+            <div class="row justify-content-center bidang-lomba-content">
+                
             </div> <!-- row -->
         </div> <!-- container -->
     </section>
 
     <!--====== FEATRES TWO PART ENDS ======-->
 
-    <!--====== PORTFOLIO PART START ======-->
-
-    <section id="portfolio" class="portfolio-area portfolio-four pb-100">
-        <div class="container">
-            <div class="row justify-content-center">
-                <div class="col-lg-6 col-md-10">
-                    <div class="section-title text-center pb-10">
-                        <h3 class="title">Featured Works</h3>
-                        <p class="text">Stop wasting time and money designing and managing a website that doesn’t get
-                            results. Happiness guaranteed!</p>
-                    </div> <!-- section title -->
-                </div>
-            </div> <!-- row -->
-            <div class="row">
-                <div class="col-lg-3 col-md-3">
-                    <div class="portfolio-menu text-center mt-50">
-                        <ul>
-                            <li data-filter="*" class="active">ALL WORK</li>
-                            <li data-filter=".branding-4">BRANDING</li>
-                            <li data-filter=".marketing-4">MARKETING</li>
-                            <li data-filter=".planning-4">PLANNING</li>
-                            <li data-filter=".research-4">RESEARCH</li>
-                        </ul>
-                    </div> <!-- portfolio menu -->
-                </div>
-                <div class="col-lg-9 col-md-9">
-                    <div class="row no-gutters grid mt-50">
-                        <div class="col-lg-4 col-sm-6 branding-4 planning-4">
-                            <div class="single-portfolio">
-                                <div class="portfolio-image">
-                                    <img src="images/portfolio/1.png" alt="">
-                                    <div class="portfolio-overlay d-flex align-items-center justify-content-center">
-                                        <div class="portfolio-content">
-                                            <div class="portfolio-icon">
-                                                <a class="image-popup" href="images/portfolio/1.png"><i
-                                                        class="lni lni-zoom-in"></i></a>
-                                                <img src="images/portfolio/shape.svg" alt="shape" class="shape">
-                                            </div>
-                                            <div class="portfolio-icon">
-                                                <a href="#"><i class="lni lni-link"></i></a>
-                                                <img src="images/portfolio/shape.svg" alt="shape" class="shape">
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div> <!-- single portfolio -->
-                        </div>
-                        <div class="col-lg-4 col-sm-6 marketing-4 research-4">
-                            <div class="single-portfolio">
-                                <div class="portfolio-image">
-                                    <img src="images/portfolio/2.png" alt="">
-                                    <div class="portfolio-overlay d-flex align-items-center justify-content-center">
-                                        <div class="portfolio-content">
-                                            <div class="portfolio-icon">
-                                                <a class="image-popup" href="images/portfolio/2.png"><i
-                                                        class="lni lni-zoom-in"></i></a>
-                                                <img src="images/portfolio/shape.svg" alt="shape" class="shape">
-                                            </div>
-                                            <div class="portfolio-icon">
-                                                <a href="#"><i class="lni lni-link"></i></a>
-                                                <img src="images/portfolio/shape.svg" alt="shape" class="shape">
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div> <!-- single portfolio -->
-                        </div>
-                        <div class="col-lg-4 col-sm-6 branding-4 marketing-4">
-                            <div class="single-portfolio">
-                                <div class="portfolio-image">
-                                    <img src="images/portfolio/3.png" alt="">
-                                    <div class="portfolio-overlay d-flex align-items-center justify-content-center">
-                                        <div class="portfolio-content">
-                                            <div class="portfolio-icon">
-                                                <a class="image-popup" href="images/portfolio/3.png"><i
-                                                        class="lni lni-zoom-in"></i></a>
-                                                <img src="images/portfolio/shape.svg" alt="shape" class="shape">
-                                            </div>
-                                            <div class="portfolio-icon">
-                                                <a href="#"><i class="lni lni-link"></i></a>
-                                                <img src="images/portfolio/shape.svg" alt="shape" class="shape">
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div> <!-- single portfolio -->
-                        </div>
-                        <div class="col-lg-4 col-sm-6 planning-4 research-4">
-                            <div class="single-portfolio">
-                                <div class="portfolio-image">
-                                    <img src="images/portfolio/4.png" alt="">
-                                    <div class="portfolio-overlay d-flex align-items-center justify-content-center">
-                                        <div class="portfolio-content">
-                                            <div class="portfolio-icon">
-                                                <a class="image-popup" href="images/portfolio/4.png"><i
-                                                        class="lni lni-zoom-in"></i></a>
-                                                <img src="images/portfolio/shape.svg" alt="shape" class="shape">
-                                            </div>
-                                            <div class="portfolio-icon">
-                                                <a href="#"><i class="lni lni-link"></i></a>
-                                                <img src="images/portfolio/shape.svg" alt="shape" class="shape">
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div> <!-- single portfolio -->
-                        </div>
-                        <div class="col-lg-4 col-sm-6 marketing-4">
-                            <div class="single-portfolio">
-                                <div class="portfolio-image">
-                                    <img src="images/portfolio/5.png" alt="">
-                                    <div class="portfolio-overlay d-flex align-items-center justify-content-center">
-                                        <div class="portfolio-content">
-                                            <div class="portfolio-icon">
-                                                <a class="image-popup" href="images/portfolio/5.png"><i
-                                                        class="lni lni-zoom-in"></i></a>
-                                                <img src="images/portfolio/shape.svg" alt="shape" class="shape">
-                                            </div>
-                                            <div class="portfolio-icon">
-                                                <a href="#"><i class="lni lni-link"></i></a>
-                                                <img src="images/portfolio/shape.svg" alt="shape" class="shape">
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div> <!-- single portfolio -->
-                        </div>
-                        <div class="col-lg-4 col-sm-6 planning-4">
-                            <div class="single-portfolio">
-                                <div class="portfolio-image">
-                                    <img src="images/portfolio/6.png" alt="">
-                                    <div class="portfolio-overlay d-flex align-items-center justify-content-center">
-                                        <div class="portfolio-content">
-                                            <div class="portfolio-icon">
-                                                <a class="image-popup" href="images/portfolio/6.png"><i
-                                                        class="lni lni-zoom-in"></i></a>
-                                                <img src="images/portfolio/shape.svg" alt="shape" class="shape">
-                                            </div>
-                                            <div class="portfolio-icon">
-                                                <a href="#"><i class="lni lni-link"></i></a>
-                                                <img src="images/portfolio/shape.svg" alt="shape" class="shape">
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div> <!-- single portfolio -->
-                        </div>
-                        <div class="col-lg-4 col-sm-6 research-4">
-                            <div class="single-portfolio">
-                                <div class="portfolio-image">
-                                    <img src="images/portfolio/7.png" alt="">
-                                    <div class="portfolio-overlay d-flex align-items-center justify-content-center">
-                                        <div class="portfolio-content">
-                                            <div class="portfolio-icon">
-                                                <a class="image-popup" href="images/portfolio/7.png"><i
-                                                        class="lni lni-zoom-in"></i></a>
-                                                <img src="images/portfolio/shape.svg" alt="shape" class="shape">
-                                            </div>
-                                            <div class="portfolio-icon">
-                                                <a href="#"><i class="lni lni-link"></i></a>
-                                                <img src="images/portfolio/shape.svg" alt="shape" class="shape">
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div> <!-- single portfolio -->
-                        </div>
-                        <div class="col-lg-4 col-sm-6 branding-4 planning-4">
-                            <div class="single-portfolio">
-                                <div class="portfolio-image">
-                                    <img src="images/portfolio/8.png" alt="">
-                                    <div class="portfolio-overlay d-flex align-items-center justify-content-center">
-                                        <div class="portfolio-content">
-                                            <div class="portfolio-icon">
-                                                <a class="image-popup" href="images/portfolio/8.png"><i
-                                                        class="lni lni-zoom-in"></i></a>
-                                                <img src="images/portfolio/shape.svg" alt="shape" class="shape">
-                                            </div>
-                                            <div class="portfolio-icon">
-                                                <a href="#"><i class="lni lni-link"></i></a>
-                                                <img src="images/portfolio/shape.svg" alt="shape" class="shape">
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div> <!-- single portfolio -->
-                        </div>
-                        <div class="col-lg-4 col-sm-6 marketing-4">
-                            <div class="single-portfolio">
-                                <div class="portfolio-image">
-                                    <img src="images/portfolio/9.png" alt="">
-                                    <div class="portfolio-overlay d-flex align-items-center justify-content-center">
-                                        <div class="portfolio-content">
-                                            <div class="portfolio-icon">
-                                                <a class="image-popup" href="images/portfolio/9.png"><i
-                                                        class="lni lni-zoom-in"></i></a>
-                                                <img src="images/portfolio/shape.svg" alt="shape" class="shape">
-                                            </div>
-                                            <div class="portfolio-icon">
-                                                <a href="#"><i class="lni lni-link"></i></a>
-                                                <img src="images/portfolio/shape.svg" alt="shape" class="shape">
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div> <!-- single portfolio -->
-                        </div>
-                    </div> <!-- row -->
-                </div>
-            </div> <!-- row -->
-        </div> <!-- container -->
-    </section>
-
-    <!--====== PORTFOLIO PART ENDS ======-->
-
-    <!--====== PRINICNG START ======-->
-
-    <section id="pricing" class="pricing-area ">
-        <div class="container">
-            <div class="row justify-content-center">
-                <div class="col-lg-6 col-md-10">
-                    <div class="section-title text-center pb-25">
-                        <h3 class="title">Pricing Plans</h3>
-                        <p class="text">Stop wasting time and money designing and managing a website that doesn’t get
-                            results. Happiness guaranteed!</p>
-                    </div> <!-- section title -->
-                </div>
-            </div> <!-- row -->
-            <div class="row justify-content-center">
-                <div class="col-lg-4 col-md-7 col-sm-9">
-                    <div class="pricing-style mt-30">
-                        <div class="pricing-icon text-center">
-                            <img src="images/basic.svg" alt="">
-                        </div>
-                        <div class="pricing-header text-center">
-                            <h5 class="sub-title">Basic</h5>
-                            <p class="month"><span class="price">$ 199</span>/month</p>
-                        </div>
-                        <div class="pricing-list">
-                            <ul>
-                                <li><i class="lni lni-check-mark-circle"></i> Carefully crafted components</li>
-                                <li><i class="lni lni-check-mark-circle"></i> Amazing page examples</li>
-                            </ul>
-                        </div>
-                        <div class="pricing-btn rounded-buttons text-center">
-                            <a class="main-btn rounded-one" href="#">GET STARTED</a>
-                        </div>
-                    </div> <!-- pricing style one -->
-                </div>
-
-                <div class="col-lg-4 col-md-7 col-sm-9">
-                    <div class="pricing-style mt-30">
-                        <div class="pricing-icon text-center">
-                            <img src="images/pro.svg" alt="">
-                        </div>
-                        <div class="pricing-header text-center">
-                            <h5 class="sub-title">Pro</h5>
-                            <p class="month"><span class="price">$ 399</span>/month</p>
-                        </div>
-                        <div class="pricing-list">
-                            <ul>
-                                <li><i class="lni lni-check-mark-circle"></i> Carefully crafted components</li>
-                                <li><i class="lni lni-check-mark-circle"></i> Amazing page examples</li>
-                            </ul>
-                        </div>
-                        <div class="pricing-btn rounded-buttons text-center">
-                            <a class="main-btn rounded-one" href="#">GET STARTED</a>
-                        </div>
-                    </div> <!-- pricing style one -->
-                </div>
-
-                <div class="col-lg-4 col-md-7 col-sm-9">
-                    <div class="pricing-style mt-30">
-                        <div class="pricing-icon text-center">
-                            <img src="images/enterprise.svg" alt="">
-                        </div>
-                        <div class="pricing-header text-center">
-                            <h5 class="sub-title">Enterprise</h5>
-                            <p class="month"><span class="price">$ 699</span>/month</p>
-                        </div>
-                        <div class="pricing-list">
-                            <ul>
-                                <li><i class="lni lni-check-mark-circle"></i> Carefully crafted components</li>
-                                <li><i class="lni lni-check-mark-circle"></i> Amazing page examples</li>
-                            </ul>
-                        </div>
-                        <div class="pricing-btn rounded-buttons text-center">
-                            <a class="main-btn rounded-one" href="#">GET STARTED</a>
-                        </div>
-                    </div> <!-- pricing style one -->
-                </div>
-            </div> <!-- row -->
-        </div> <!-- container -->
-    </section>
-
-    <!--====== PRINICNG ENDS ======-->
-
     <!--====== ABOUT PART START ======-->
 
-    <section id="about" class="about-area">
+    <section id="faq" class="about-area">
         <div class="container">
             <div class="row">
                 <div class="col-lg-5">
@@ -663,123 +359,6 @@
     </section>
 
     <!--====== ABOUT PART ENDS ======-->
-
-    <!--====== TESTIMONIAL PART START ======-->
-
-    <section id="testimonial" class="testimonial-area">
-        <div class="container">
-            <div class="row justify-content-between">
-                <div class="col-xl-5 col-lg-6">
-                    <div class="testimonial-left-content mt-45">
-                        <h6 class="sub-title">Testimonials</h6>
-                        <h4 class="title">What Clients Says <br> About Us</h4>
-                        <ul class="testimonial-line">
-                            <li></li>
-                            <li></li>
-                            <li></li>
-                            <li></li>
-                        </ul>
-                        <p class="text">Duis et metus et massa tempus lacinia. Class aptent taciti sociosqu ad litora
-                            torquent per conubia nostra, per inceptos himenaeos. Maecenas ultricies, orci molestie
-                            blandit interdum. <br> <br> ipsum ante pellentesque nisl, eget mollis turpis quam nec eros.
-                            ultricies, orci molestie blandit interdum.</p>
-                    </div> <!-- testimonial left content -->
-                </div>
-                <div class="col-lg-6">
-                    <div class="testimonial-right-content mt-50">
-                        <div class="quota">
-                            <i class="lni lni-quotation"></i>
-                        </div>
-                        <div class="testimonial-content-wrapper testimonial-active">
-                            <div class="single-testimonial">
-                                <div class="testimonial-text">
-                                    <p class="text">“Praesent scelerisque, odio eu fermentum malesuada, nisi arcu
-                                        volutpat nisl, sit amet convallis nunc turp.”</p>
-                                </div>
-                                <div class="testimonial-author d-sm-flex justify-content-between">
-                                    <div class="author-info d-flex align-items-center">
-                                        <div class="author-image">
-                                            <img src="images/author-1.jpg" alt="author">
-                                        </div>
-                                        <div class="author-name media-body">
-                                            <h5 class="name">Mr. Jems Bond</h5>
-                                            <span class="sub-title">CEO Mbuild Firm</span>
-                                        </div>
-                                    </div>
-                                    <div class="author-review">
-                                        <ul class="star">
-                                            <li><i class="lni lni-star-filled"></i></li>
-                                            <li><i class="lni lni-star-filled"></i></li>
-                                            <li><i class="lni lni-star-filled"></i></li>
-                                            <li><i class="lni lni-star-filled"></i></li>
-                                            <li><i class="lni lni-star-filled"></i></li>
-                                        </ul>
-                                        <span class="review">( 7 Reviews )</span>
-                                    </div>
-                                </div>
-                            </div> <!-- single testimonial -->
-                            <div class="single-testimonial">
-                                <div class="testimonial-text">
-                                    <p class="text">“Praesent scelerisque, odio eu fermentum malesuada, nisi arcu
-                                        volutpat nisl, sit amet convallis nunc turp.”</p>
-                                </div>
-                                <div class="testimonial-author d-sm-flex justify-content-between">
-                                    <div class="author-info d-flex align-items-center">
-                                        <div class="author-image">
-                                            <img src="images/author-2.jpg" alt="author">
-                                        </div>
-                                        <div class="author-name media-body">
-                                            <h5 class="name">Mr. Jems Bond</h5>
-                                            <span class="sub-title">CEO Mbuild Firm</span>
-                                        </div>
-                                    </div>
-                                    <div class="author-review">
-                                        <ul class="star">
-                                            <li><i class="lni lni-star-filled"></i></li>
-                                            <li><i class="lni lni-star-filled"></i></li>
-                                            <li><i class="lni lni-star-filled"></i></li>
-                                            <li><i class="lni lni-star-filled"></i></li>
-                                            <li><i class="lni lni-star-filled"></i></li>
-                                        </ul>
-                                        <span class="review">( 7 Reviews )</span>
-                                    </div>
-                                </div>
-                            </div> <!-- single testimonial -->
-                            <div class="single-testimonial">
-                                <div class="testimonial-text">
-                                    <p class="text">“Praesent scelerisque, odio eu fermentum malesuada, nisi arcu
-                                        volutpat nisl, sit amet convallis nunc turp.”</p>
-                                </div>
-                                <div class="testimonial-author d-sm-flex justify-content-between">
-                                    <div class="author-info d-flex align-items-center">
-                                        <div class="author-image">
-                                            <img src="images/author-3.jpg" alt="author">
-                                        </div>
-                                        <div class="author-name media-body">
-                                            <h5 class="name">Mr. Jems Bond</h5>
-                                            <span class="sub-title">CEO Mbuild Firm</span>
-                                        </div>
-                                    </div>
-                                    <div class="author-review">
-                                        <ul class="star">
-                                            <li><i class="lni lni-star-filled"></i></li>
-                                            <li><i class="lni lni-star-filled"></i></li>
-                                            <li><i class="lni lni-star-filled"></i></li>
-                                            <li><i class="lni lni-star-filled"></i></li>
-                                            <li><i class="lni lni-star-filled"></i></li>
-                                        </ul>
-                                        <span class="review">( 7 Reviews )</span>
-                                    </div>
-                                </div>
-                            </div> <!-- single testimonial -->
-                        </div> <!-- testimonial content wrapper -->
-                    </div> <!-- testimonial right content -->
-                </div>
-            </div> <!-- row -->
-        </div> <!-- container -->
-    </section>
-
-    <!--====== TESTIMONIAL PART ENDS ======-->
 
     <!--====== TEAM START ======-->
 
@@ -1052,6 +631,7 @@
 
     <!--====== Main js ======-->
     <script src="{{ asset('js/main.js') }}"></script>
+    <script src="{{ asset('js/contentdata.js') }}"></script>
 
 </body>
 
