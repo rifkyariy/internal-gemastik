@@ -23,10 +23,6 @@ var setContent = (target,contentData) => {
                 </div>
                 `
         selector.innerHTML += htmlString;
-
-        console.log(htmlString);
-        
-        
     });
     
     console.log(selector);
@@ -35,9 +31,6 @@ var setContent = (target,contentData) => {
 // data
 var contentArr = [];
 var bidanglombacontent = {
-    'html' : `
-                
-                `,
     'data' : [
         {
             'title' : 'Keamanan Siber',
