@@ -81,7 +81,8 @@ var carouselcontent = {
     'html' : (data) => {
         return `
         <div class="carousel-item ${data.status}">
-                    <div class="container">
+                    <div class="backgroundpattern"> 
+                        <div class="container">
                         <div class="row">
                             <div class="col-lg-6">
                                 <div class="slider-content">
@@ -100,6 +101,7 @@ var carouselcontent = {
                             <img src="${data.image}" alt="${data.title}">
                         </div> <!-- slider-imgae -->
                     </div> <!-- slider-imgae box -->
+                    </div>
                 </div> <!-- carousel-item -->
         `   
     },
