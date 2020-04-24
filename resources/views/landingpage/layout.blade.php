@@ -318,7 +318,7 @@
                                 <i class="lni lni-instagram"></i>
                             </div>
                             <div class="contact-info-content media-body mt-5">
-                                <p class="text"> @infiniteuny</p>
+                                <p class="text"><a href="https://www.instagram.com/infinite.uny">@infinite.uny</a></p>
                             </div>
                         </div> <!-- single contact info -->
                     </div>
@@ -328,7 +328,7 @@
                                 <i class="lni lni-envelope"></i>
                             </div>
                             <div class="contact-info-content media-body  mt-5">
-                                <p class="text">hello@infiniteuny.id</p>
+                                <p class="text"><a href="mailto:hello@infiniteuny.id">hello@infiniteuny.id</a></p>
                             </div>
                         </div> <!-- single contact info -->
                     </div>

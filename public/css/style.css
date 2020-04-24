@@ -3135,8 +3135,7 @@ p.form-message.success, p.form-message.error {
   font-size: 24px;
   color: #fff;
   border-radius: 50%; }
-.contact-info .single-contact-info .contact-info-content {
-  padding-left: 20px; }
+.contact-info .single-contact-info .contact-info-content {}
   .contact-info .single-contact-info .contact-info-content .text {
     color: #121212; }
 .contact-info .single-contact-info.contact-color-1 .contact-info-icon i {
