@@ -125,11 +125,11 @@ var carouselcontent = {
             'image': `images/slider/2.png`
         },
         {
-            'title' : `Gemastik XIII Memanggil !`,
-            'desc' : `Submit ide kreatifmu dan dapatkan bimbingan eksklusif.`,
+            'title' : `Pendampingan Online Ekskusif !`,
+            'desc' : `Daripada gabut ye kan, mending ikuti pendampingan online biar paham.`,
             'status' : ``,
             'button' : `Daftar Sekarang`,
-            'buttonAdd' : `<li><a class="main-btn rounded-two" href="/panduan">Lihat Panduan</a></li>`,
+            'buttonAdd' : ``,
             'link': `/pendampingan`,
             'image': `images/slider/1.png`
         }
@@ -380,3 +380,12 @@ setContent(".bidang-lomba-content",bidanglombacontent);
 setContent(".tentang-gemastik-content",tentanggemastik);
 setContent(".carousel-inner",carouselcontent);
 initFaq(4);
+
+
+
+// after all sets
+
+// First we get the viewport height and we multiple it by 1% to get a value for a vh unit
+let vh = window.innerHeight * 0.01;
+// Then we set the value in the --vh custom property to the root of the document
+document.documentElement.style.setProperty('--vh', `${vh}px`);
