@@ -2366,13 +2366,13 @@ p {
   height: calc(var(--vh, 1vh) * 100);}
   @media only screen and (min-width: 768px) and (max-width: 991px) {
     .carousel-item {
-      height: calc(var(--vh, 1vh) * 92);}}
+      height: calc(var(--vh, 1vh) * 96);}}
   @media (max-width: 767px) {
     .carousel-item {
-      height: calc(var(--vh, 1vh) * 92);}}
+      height: calc(var(--vh, 1vh) * 96);}}
   @media only screen and (min-width: 576px) and (max-width: 767px) {
     .carousel-item {
-      height: calc(var(--vh, 1vh) * 92);} } 
+      height: calc(var(--vh, 1vh) * 96);} } 
   .carousel-item::before {
     position: absolute;
     content: '';
