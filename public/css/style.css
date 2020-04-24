@@ -2362,6 +2362,7 @@ p {
 .carousel-item {
   background-color: #2e8163;
   position: relative;
+  height: 99vh;
   height: calc(var(--vh, 1vh) * 100);}
   .carousel-item::before {
     position: absolute;
