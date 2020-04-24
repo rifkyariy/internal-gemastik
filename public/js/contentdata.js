@@ -1,3 +1,4 @@
+// set Content - Mengisi target html dengan tag yang diingikan
 var setContent = (target,contentData) => {
     let selector =  document.querySelector(target);
     let htmlString;
@@ -6,6 +7,70 @@ var setContent = (target,contentData) => {
         htmlString = contentData.html(element);
         selector.innerHTML += htmlString;
     });
+}
+
+// reset Content
+var resetContent = (target) => {
+    let selector =  document.querySelector(target);
+    let htmlString = '';
+    selector.innerHTML = htmlString;
+}
+
+
+
+// memberikan index pada sebuah objek
+let generateIndex = (targetJson) => {
+    let x = 0;
+    outData = targetJson
+    outData.data.forEach(element => {
+        element.index = x;
+        x++;
+    });
+
+    return outData;
+}
+
+// membuat list - semacam pagination
+let generateList = (array, page_size, page_number) => {
+    return array.slice((page_number - 1) * page_size, page_number * page_size);
+}
+
+// expand and less fun
+
+var toggle = 0;
+let expandFaqFun = (defaultSize, pageSize) => {
+    let newSize = pageSize;
+    
+    // Menentukan expand atau less
+    if(toggle  == 0){
+
+        // menentukan size
+        if((generateIndex(faqcontent).data.length - newSize) >= pageSize){
+            newSize = newSize + pageSize;
+        }else{
+            newSize = newSize + generateIndex(faqcontent).data.length - newSize;
+        }
+
+        // reset list, generate list dan menentukan masih expand atau less 
+        if(newSize < generateIndex(faqcontent).data.length){
+            faqExpand.data[0].onclick = `expandFaqFun(${defaultSize},${newSize})`;
+            resetContent("#accordionExample");
+            setFaq(newSize,1,generateIndex(faqcontent));
+            toggle = 0;
+        }else{
+            faqExpand.data[0].onclick = `expandFaqFun(${defaultSize},${defaultSize})`;
+            resetContent("#accordionExample");
+            setFaq(newSize,1,generateIndex(faqcontent));
+            document.querySelector('#expandFaq').innerHTML = ('Less')
+            toggle = 1;
+        }
+    }else{
+        resetContent("#accordionExample");
+        setFaq(pageSize,1,generateIndex(faqcontent));
+        document.querySelector('#expandFaq').innerHTML = ('Expand')
+        toggle = 0;
+    }
+
 }
 
 // data
@@ -45,7 +110,7 @@ var carouselcontent = {
             'status' : `active`,
             'button' : `Daftar Sekarang`,
             'buttonAdd' : `<li><a class="main-btn rounded-two" href="/panduan">Lihat Panduan</a></li>`,
-            'link': `/carousel1`,
+            'link': `/gemastik`,
             'image': `images/slider/1.svg`
         },
         {
@@ -54,7 +119,7 @@ var carouselcontent = {
             'status' : ``,
             'button' : `Lihat Timeline`,
             'buttonAdd' : ``,
-            'link': `/carousel2`,
+            'link': `/timeline`,
             'image': `images/slider/2.png`
         },
         {
@@ -63,7 +128,7 @@ var carouselcontent = {
             'status' : ``,
             'button' : `Daftar Sekarang`,
             'buttonAdd' : `<li><a class="main-btn rounded-two" href="/panduan">Lihat Panduan</a></li>`,
-            'link': `/carousel1`,
+            'link': `/pendampingan`,
             'image': `images/slider/1.png`
         }
         
@@ -190,10 +255,126 @@ var bidanglombacontent = {
     ]
 }
 
+// frequently asked questions
+// faq title
+var faqtitle = {
+    'html' : (data) => {
+        return `
+            <h6 class="sub-title">${data.subtitle}</h6>
+            <h4 class="title">${data.title}</h4>
+        `
+    },
+    'data' : [
+        {
+            'subtitle' : "Frequently Asked Questions",
+            'title' : 'Pertanyaan yang sering ditanyakan '
+        }
+    ]
+}
 
+// faq content
+var faqcontent = {
+    'html' : (data) => {
+        return `
+            <div class="card">
+                <div class="card-header" id="heading${data.index}">
+                    <a href="#" class="collapsed" data-toggle="collapse" data-target="#collapse${data.index}"
+                        aria-expanded="false" aria-controls="collapse${data.index}">
+                        <b>${data.title}</b>
+                    </a>
+                </div>
+
+                <div id="collapse${data.index}" class="collapse" aria-labelledby="heading${data.index}"
+                    data-parent="#accordionExample">
+                    <div class="card-body">
+                        <p class="text">
+                            ${data.answer}
+                        </p>
+                    </div>
+                </div>
+            </div> <!-- card -->
+        `
+    },
+    'data' : [
+            {
+                'title' : 'Gemastik itu apa kak ?',
+                'answer' : '<b>Gemastik</b> adalah Pagelaran Mahasiswa Nasional Bidang Teknologi Informasi dan Komunikasi. Sederhananya, Gemastik itu seperti Pimnas khusus bidang TIK '
+            },
+            {
+                'title' : 'Kalau bukan mahasiswa TI boleh ikut nggak kak?',
+                'answer' : '<b>Boleh banget</b>, walaupun kompetisi ini memiliki fokus bidang TIK tapi bisa diikuti sama mahasiswa jurusan apa saja'
+            },
+            {
+                'title' : 'Harus bisa coding ya kak?',
+                'answer' : '<b>Nggak sih</b> , untuk bidang lomba tertentu seperti Animasi, Desain Pengalaman Pengguna, (Bisnis TIK?) dan Karya Tulis Ilmiah TIK kamu bisa ikut meskipun nggak bisa ngoding sekalipun'
+            },
+            {
+                'title' : 'Syarat untuk daftar apa aja kak?',
+                'answer' : 'Kuy kepoin syarat pendaftaran di link berikut <a href="/syaratgemastik"><b>Syarat Ketentuan</b> </a>'
+            },
+            {
+                'title' : 'Bagaimana tahap pendaftaran gemastik?',
+                'answer' : 'Coming soon yeaa'
+            },        
+            {
+                'title' : 'Apa benefit pendaftaran internal UNY?',
+                'answer' : 'Benefit ikut pendaftaran internal UNY, kamu bisa dapet review, kritik, saran dan arahan dari mastah, opo yo kata selain mastah'
+            },
+            {
+                'title' : 'Berapa orang maksimal satu tim?',
+                'answer' : 'Satu tim maksimal terdiri dari 3 mahasiswa dari perguruan tinggi yang sama ya'
+            },
+            {
+                'title' : 'Bagaimana mekanisme review internal ?',
+                'answer' : 'Bisa kepoin alur atau timelinenya disini <a href="/timeline"><b>Timeline Internal Gemastik</b> </a>'
+            }
+        ]
+}
+
+// button expand -> FAQ
+var faqExpand = {
+    'html'  : (data) => {
+        return `
+            <a class="main-btn mt-40 rounded-two expandbtn" onclick="${data.onclick}" id="${data.id}">${data.button}</a>
+        `
+    },
+    'data' : [
+        {
+            'id' : 'expandFaq',
+            'button' : 'Expand'
+        }
+    ]
+}
+
+
+
+
+let setFaq = (page_size,page, targetJson ) => {
+    const dataLength = targetJson.data.length;
+    const htmlString = targetJson.html;
+    const limitData = generateList(targetJson.data, page_size, page);
+    const newJson = 
+        {
+            'html' : htmlString,
+            'data' : limitData
+        }
+
+    setContent("#accordionExample",newJson);
+    setContent("#accordionExample",faqExpand);
+}
+
+
+
+
+// init fun
+let initFaq = (pageSize) => {
+    setContent(".about-title",faqtitle);
+    faqExpand.data[0].onclick = `expandFaqFun(${pageSize},${pageSize})`;
+    setFaq(pageSize,1,generateIndex(faqcontent));
+}
 
 // init
 setContent(".bidang-lomba-content",bidanglombacontent);
 setContent(".tentang-gemastik-content",tentanggemastik);
 setContent(".carousel-inner",carouselcontent);
-setIndicator(".carousel-indicators",0,carouselcontent.data.length);
+initFaq(4);

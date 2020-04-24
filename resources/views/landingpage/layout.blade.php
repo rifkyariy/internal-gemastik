@@ -184,97 +184,21 @@
     <section id="faq" class="about-area">
         <div class="container">
             <div class="row">
-                <div class="col-lg-5">
+                <div class="col-lg-6">
                     <div class="faq-content mt-45">
                         <div class="about-title">
-                            <h6 class="sub-title">A Little More About Us</h6>
-                            <h4 class="title">Frequently Asked Questions <br> About Our Site</h4>
+                            
                         </div> <!-- faq title -->
                         <div class="about-accordion">
                             <div class="accordion" id="accordionExample">
-                                <div class="card">
-                                    <div class="card-header" id="headingOne">
-                                        <a href="#" data-toggle="collapse" data-target="#collapseOne"
-                                            aria-expanded="true" aria-controls="collapseOne">Frequently Asked Question
-                                            One</a>
-                                    </div>
-
-                                    <div id="collapseOne" class="collapse show" aria-labelledby="headingOne"
-                                        data-parent="#accordionExample">
-                                        <div class="card-body">
-                                            <p class="text">Morbi vehicula arcu et pellentesque tincidunt. Nunc ligula
-                                                nulla, lobortis a elementum non, vulputate ut arcu. Aliquam erat
-                                                volutpat. Nullam lacinia felis.</p>
-                                        </div>
-                                    </div>
-                                </div> <!-- card -->
-                                <div class="card">
-                                    <div class="card-header" id="headingTwo">
-                                        <a href="#" class="collapsed" data-toggle="collapse" data-target="#collapseTwo"
-                                            aria-expanded="false" aria-controls="collapseTwo">Frequently Asked Question
-                                            Two</a>
-                                    </div>
-                                    <div id="collapseTwo" class="collapse" aria-labelledby="headingTwo"
-                                        data-parent="#accordionExample">
-                                        <div class="card-body">
-                                            <p class="text">Morbi vehicula arcu et pellentesque tincidunt. Nunc ligula
-                                                nulla, lobortis a elementum non, vulputate ut arcu. Aliquam erat
-                                                volutpat. Nullam lacinia felis.</p>
-                                        </div>
-                                    </div>
-                                </div> <!-- card -->
-                                <div class="card">
-                                    <div class="card-header" id="headingThree">
-                                        <a href="#" class="collapsed" data-toggle="collapse"
-                                            data-target="#collapseThree" aria-expanded="false"
-                                            aria-controls="collapseThree">Frequently Asked Question Three</a>
-                                    </div>
-                                    <div id="collapseThree" class="collapse" aria-labelledby="headingThree"
-                                        data-parent="#accordionExample">
-                                        <div class="card-body">
-                                            <p class="text">Morbi vehicula arcu et pellentesque tincidunt. Nunc ligula
-                                                nulla, lobortis a elementum non, vulputate ut arcu. Aliquam erat
-                                                volutpat. Nullam lacinia felis.</p>
-                                        </div>
-                                    </div>
-                                </div> <!-- card -->
-                                <div class="card">
-                                    <div class="card-header" id="headingFore">
-                                        <a href="#" class="collapsed" data-toggle="collapse" data-target="#collapseFore"
-                                            aria-expanded="false" aria-controls="collapseFore">Frequently Asked Question
-                                            Four</a>
-                                    </div>
-                                    <div id="collapseFore" class="collapse" aria-labelledby="headingFore"
-                                        data-parent="#accordionExample">
-                                        <div class="card-body">
-                                            <p class="text">Morbi vehicula arcu et pellentesque tincidunt. Nunc ligula
-                                                nulla, lobortis a elementum non, vulputate ut arcu. Aliquam erat
-                                                volutpat. Nullam lacinia felis.</p>
-                                        </div>
-                                    </div>
-                                </div> <!-- card -->
-                                <div class="card">
-                                    <div class="card-header" id="headingFive">
-                                        <a href="#" class="collapsed" data-toggle="collapse" data-target="#collapseFive"
-                                            aria-expanded="false" aria-controls="collapseFive">Frequently Asked Question
-                                            Five</a>
-                                    </div>
-                                    <div id="collapseFive" class="collapse" aria-labelledby="headingFive"
-                                        data-parent="#accordionExample">
-                                        <div class="card-body">
-                                            <p class="text">Morbi vehicula arcu et pellentesque tincidunt. Nunc ligula
-                                                nulla, lobortis a elementum non, vulputate ut arcu. Aliquam erat
-                                                volutpat. Nullam lacinia felis.</p>
-                                        </div>
-                                    </div>
-                                </div> <!-- card -->
+                                
                             </div>
                         </div> <!-- faq accordion -->
                     </div> <!-- faq content -->
                 </div>
-                <div class="col-lg-7">
-                    <div class="about-image mt-50">
-                        <img src="images/about.jpg" alt="about">
+                <div class="col-lg-6">
+                    <div class="about-image ml-60 mt-50">
+                        <img src="{{asset('images/faq.svg')}}"  alt="about">
                     </div> <!-- faq image -->
                 </div>
             </div> <!-- row -->
@@ -285,7 +209,7 @@
 
     <!--====== TEAM START ======-->
 
-    <section id="team" class="team-area pt-120 pb-130">
+    {{-- <section id="team" class="team-area pt-120 pb-130">
         <div class="container">
             <div class="row justify-content-center">
                 <div class="col-lg-6 col-md-10">
@@ -359,7 +283,7 @@
                 </div>
             </div> <!-- row -->
         </div> <!-- container -->
-    </section>
+    </section> --}}
 
     <!--====== TEAM  ENDS ======-->
 
@@ -370,58 +294,58 @@
             <div class="row justify-content-center">
                 <div class="col-lg-6 col-md-10">
                     <div class="section-title text-center pb-30">
-                        <h3 class="title">Contact</h3>
-                        <p class="text">Stop wasting time and money designing and managing a website that doesn’t get
-                            results. Happiness guaranteed!</p>
+                        <h3 class="title">Masih Ada Yang Mau Ditanyaiin ?</h3>
+                        <p class="text">Daripada bingung mau tanya kemana ,kuy langsung aja datangi kami atau hubungi kontak di bawah ini </p>
                     </div> <!-- section title -->
                 </div>
             </div> <!-- row -->
-            <div class="row">
-                <div class="col-lg-12">
-                    <div class="contact-map mt-30">
-                        <iframe id="gmap_canvas"
-                            src="https://maps.google.com/maps?q=Mission%20District%2C%20San%20Francisco%2C%20CA%2C%20USA&t=&z=13&ie=UTF8&iwloc=&output=embed"
-                            frameborder="0" scrolling="no" marginheight="0" marginwidth="0"></iframe>
-                    </div> <!-- row -->
-                </div>
-            </div> <!-- row -->
+            
             <div class="contact-info pt-30">
                 <div class="row">
-                    <div class="col-lg-4 col-md-6">
-                        <div class="single-contact-info contact-color-1 mt-30 d-flex ">
+                    <div class="col-lg-3 col-md-6">
+                        <div class="single-contact-info contact-color-1 mt-30 ">
                             <div class="contact-info-icon">
                                 <i class="lni lni-map-marker"></i>
                             </div>
-                            <div class="contact-info-content media-body">
-                                <p class="text"> Elizabeth St, Melbourne<br>1202 Australia.</p>
+                            <div class="contact-info-content media-body  mt-5">
+                                <p class="text"> Gedung Media Sebelah Selatan Lantai 2 Sayap Barat FT UNY</p>
                             </div>
                         </div> <!-- single contact info -->
                     </div>
-                    <div class="col-lg-4 col-md-6">
-                        <div class="single-contact-info contact-color-2 mt-30 d-flex ">
-                            <div class="contact-info-icon">
+                    <div class="col-lg-3 col-md-6">
+                        <div class="single-contact-info contact-color-2 mt-30 ">
+                            <div class="contact-info-icon text-center">
+                                <i class="lni lni-instagram"></i>
+                            </div>
+                            <div class="contact-info-content media-body mt-5">
+                                <p class="text"> @infiniteuny</p>
+                            </div>
+                        </div> <!-- single contact info -->
+                    </div>
+                    <div class="col-lg-3 col-md-6">
+                        <div class="single-contact-info contact-color-4 mt-30">
+                            <div class="contact-info-icon ">
                                 <i class="lni lni-envelope"></i>
                             </div>
-                            <div class="contact-info-content media-body">
-                                <p class="text">hello@ayroui.com</p>
-                                <p class="text">support@uideck.com</p>
+                            <div class="contact-info-content media-body  mt-5">
+                                <p class="text">hello@infiniteuny.id</p>
                             </div>
                         </div> <!-- single contact info -->
                     </div>
-                    <div class="col-lg-4 col-md-6">
-                        <div class="single-contact-info contact-color-3 mt-30 d-flex ">
+                    <div class="col-lg-3 col-md-6">
+                        <div class="single-contact-info contact-color-3 mt-30 ">
                             <div class="contact-info-icon">
                                 <i class="lni lni-phone"></i>
                             </div>
-                            <div class="contact-info-content media-body">
-                                <p class="text">+333 789-321-654</p>
-                                <p class="text">+333 985-458-609</p>
+                            <div class="contact-info-content media-body  mt-5">
+                                <p class="text">+62 8982204670 (Fun)</p>
+                                <p class="text">+62 85877785879 (Sa)</p>
                             </div>
                         </div> <!-- single contact info -->
                     </div>
                 </div> <!-- row -->
             </div> <!-- contact info -->
-            <div class="row">
+            {{-- <div class="row">
                 <div class="col-lg-12">
                     <div class="contact-wrapper form-style-two pt-115">
                         <h4 class="contact-title pb-10"><i class="lni lni-envelope"></i> Leave <span>A Message.</span>
@@ -466,7 +390,7 @@
                         </form>
                     </div> <!-- contact wrapper form -->
                 </div>
-            </div> <!-- row -->
+            </div> <!-- row --> --}}
         </div> <!-- container -->
     </section>
 
@@ -479,21 +403,20 @@
             <div class="row justify-content-center">
                 <div class="col-lg-6">
                     <div class="footer-logo text-center">
-                        <a class="mt-30" href="index.html"><img src="images/logo.svg" alt="Logo"></a>
+                        <a class="mt-30" href="infiniteuny.id">
+                            <img src="{{ asset('images/logo_infinite.svg') }}" alt="">
+                        </a>
                     </div> <!-- footer logo -->
-                    <ul class="social text-center mt-60">
-                        <li><a href="https://facebook.com/uideckHQ"><i class="lni lni-facebook-filled"></i></a></li>
+                    <ul class="social text-center mt-40">
                         <li><a href="https://twitter.com/uideckHQ"><i class="lni lni-twitter-original"></i></a></li>
                         <li><a href="https://instagram.com/uideckHQ"><i class="lni lni-instagram-original"></i></a></li>
-                        <li><a href="#"><i class="lni lni-linkedin-original"></i></a></li>
                     </ul> <!-- social -->
                     <div class="footer-support text-center">
-                        <span class="number">+8801234567890</span>
-                        <span class="mail">support@uideck.com</span>
+                        <span class="number">+628982204670</span>
+                        <span class="mail">hello@infiniteuny.id</span>
                     </div>
                     <div class="copyright text-center mt-35">
-                        <p class="text">Designed by <a href="https://uideck.com" rel="nofollow">UIdeck</a> and
-                            Built-with <a rel="nofollow" href="https://ayroui.com">Ayro UI</a> </p>
+                        <p class="text">Made with <i class="lni lni-heart-filled"></i> by Infinite UNY </p>
                     </div> <!--  copyright -->
                 </div>
             </div> <!-- row -->
