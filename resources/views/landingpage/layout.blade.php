@@ -307,7 +307,7 @@
                             <div class="contact-info-icon">
                                 <i class="lni lni-map-marker"></i>
                             </div>
-                            <div class="contact-info-content media-body  mt-5">
+                            <div class="contact-info-content media-body  mt-2">
                                 <p class="text"> Gedung Media Sebelah Selatan Lantai 2 Sayap Barat FT UNY</p>
                             </div>
                         </div> <!-- single contact info -->
@@ -317,7 +317,7 @@
                             <div class="contact-info-icon text-center">
                                 <i class="lni lni-instagram"></i>
                             </div>
-                            <div class="contact-info-content media-body mt-5">
+                            <div class="contact-info-content media-body mt-2">
                                 <p class="text"><a href="https://www.instagram.com/infinite.uny">@infinite.uny</a></p>
                             </div>
                         </div> <!-- single contact info -->
@@ -327,7 +327,7 @@
                             <div class="contact-info-icon ">
                                 <i class="lni lni-envelope"></i>
                             </div>
-                            <div class="contact-info-content media-body  mt-5">
+                            <div class="contact-info-content media-body  mt-2">
                                 <p class="text"><a href="mailto:hello@infiniteuny.id">hello@infiniteuny.id</a></p>
                             </div>
                         </div> <!-- single contact info -->
@@ -337,7 +337,7 @@
                             <div class="contact-info-icon">
                                 <i class="lni lni-phone"></i>
                             </div>
-                            <div class="contact-info-content media-body  mt-5">
+                            <div class="contact-info-content media-body  mt-2">
                                 <p class="text">+62 8982204670 (Fun)</p>
                                 <p class="text">+62 85877785879 (Sa)</p>
                             </div>

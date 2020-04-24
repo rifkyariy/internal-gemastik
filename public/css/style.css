@@ -2362,8 +2362,17 @@ p {
 .carousel-item {
   background-color: #2e8163;
   position: relative;
-  height: 97vh;
-  height: calc(var(--vh, 1vh) * 97);}
+  height: 100vh;
+  height: calc(var(--vh, 1vh) * 100);}
+  @media only screen and (min-width: 768px) and (max-width: 991px) {
+    .carousel-item {
+      height: calc(var(--vh, 1vh) * 92);}}
+  @media (max-width: 767px) {
+    .carousel-item {
+      height: calc(var(--vh, 1vh) * 92);}}
+  @media only screen and (min-width: 576px) and (max-width: 767px) {
+    .carousel-item {
+      height: calc(var(--vh, 1vh) * 92);} } 
   .carousel-item::before {
     position: absolute;
     content: '';
@@ -3294,3 +3303,13 @@ p.form-message.success, p.form-message.error {
 .contact-info  .single-contact-info {
   text-align: center !important;
 }
+
+.contact-info  .single-contact-info .text{
+  color: black !important;
+  font-weight: bolder;
+}
+
+
+.contact-info  .single-contact-info .text a{
+  color: black !important;
+} 
