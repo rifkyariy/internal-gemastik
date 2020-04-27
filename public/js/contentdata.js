@@ -131,7 +131,7 @@ var carouselcontent = {
             'button' : `Daftar Sekarang`,
             'buttonAdd' : ``,
             'link': `/pendampingan`,
-            'image': `images/slider/1.png`
+            'image': `images/slider/3.png`
         }
         
     ]
@@ -178,10 +178,12 @@ var bidanglombacontent = {
                                 <img class="shape" src="images/f-shape-1.svg" alt="Shape">
                             </div>
                         </div>
-                        <div class="features-content">
-                            <p class="text">
+                        <div class="features-content multiline-ellipsis">
+                            <p class="text ">
                                 ${data.desc}
                             </p>
+                        </div>
+                        <div class="features-content">
                             <a class="features-btn" href="${data.link}">LEARN MORE</a>
                         </div>
                     </div>
@@ -191,67 +193,76 @@ var bidanglombacontent = {
         {
             'title' : 'Keamanan Siber',
             'icon' : 'lni-shield',
-            'desc': 'Short description for the ones who look for something new. Short description for the ones who look for something new.',
+            'desc': `Kompetisi kategori ini bertujuan untuk menguji kemampuan peserta dalam menghadapi kasus keamanan sistem komputer dan jaringan yang telah disiapkan,`,
             'link': '/lombactf' 
         },
         {
             'title' : 'Pemrograman Kompetitif',
             'icon' : 'lni-code',
-            'desc': 'Short description for the ones who look for something new. Short description for the ones who look for something new.',
+            'desc': `Lomba pemrograman menguji kemampuan dan nalar dari setiap peserta dalam menyelesaikan program komputer untuk memecahkan permasalahan yang diberikan. Setiap program yang dibuat selain dapat menjawab dengan tepat kasus permasalahan yang diberikan, juga harus dapat dijalankan pada setiap kasus dalam waktu yang amat terbatas. Sehingga, selain peserta diadu dalam kecepatan penulisan program, peserta juga dituntut menemukan/ menggunakan algoritma (dan struktur data) yang tepat dan efisien. Bahasa pemrograman yang digunakan antara lain: C, C++, dan Java.`,
             'link': '/lombacp' 
         },
         {
             'title' : 'Penambangan Data',
             'icon' : 'lni-database',
-            'desc': 'Short description for the ones who look for something new. Short description for the ones who look for something new.',
+            'desc': `Penambangan Data yang semakin banyak menarik perhatian baik di kalangan industri maupun akademik dunia dewasa ini, terutama dengan penggunaan deep learning yang merupakan suatu algoritma mutakhir. Keunggulan deep learning dibandingkan dengan algoritma konvensional adalah kemampuan untuk melatih jutaan bahkan milyaran parameter pembelajaran yang tersusun secara hierarkis multi lapis. Selain berkat terobosan algoritma, deep learning juga telah dimungkinkan berkat tersedianya stream data atau big data yang diperlukan untuk melatih parameter dalam jumlah raksasa tersebut. Dengan adanya konvergensi antara deep learning dan big data telah terbukti mampu memberikan insight atau performa yang sama dengan bahkan melampaui human level performance.
+            Para peserta lomba diharapkan mampu melakukan proses Penambangan Data terhadap big data yang tersedia secara publik di web serta sudah terverifikasi validitasnya. Langkah peserta selanjutnya adalah memvisualisasikan hasil proses Penambangan Data tersebut sehingga berguna bagi masyarakat luas.`,
             'link': '/lombadatamining   ' 
         },
         {
             'title' : 'Pengembangan Bisnis TIK',
             'icon' : 'lni-investment',
-            'desc': 'Short description for the ones who look for something new. Short description for the ones who look for something new.',
+            'desc': `Kategori lomba ini adalah kompetisi pengembangan model bisnis dengan produk TIK. Lomba ini memberikan kesempatan kepada peserta yang memiliki ide bisnis, start up dan pengembangan usaha yang berorientasi pada produk TIK, baik berupa jasa dan produk. Lomba ini akan menyeleksi ide pengembangan bisnis dalam bentuk ringkasan eksekutif pada penyisihan tahap pertama, kemudian business plan pada penyisihan tahap kedua, dan kompetisi produk disertai dengan proyeksi bisnisnya.`,
             'link': '/lombabussines' 
         },
         {
             'title' : 'Animasi',
             'icon' : 'lni-bolt',
-            'desc': 'Short description for the ones who look for something new. Short description for the ones who look for something new.',
+            'desc': `Animasi merupakan sebuah lomba karya cipta dalam bentuk visualisasi 2D maupun 3D yang mengandung unsur kreativitas dan inovasi pemuda sebagai elemen penting dalam karya cipta tersebut. Karya berbentuk film pendek dari bentuk digital animation.`,
             'link': '/lombaanimasi' 
         },
         {
             'title' : 'Kota cerdas',
             'icon' : 'lni-apartment',
-            'desc': 'Short description for the ones who look for something new. Short description for the ones who look for something new.',
+            'desc': `Kota Cerdas atau smart city adalah suatu konsep mengenai pemanfaatan data untuk mengelola kota/melayani masyarakat. Inovasi kota cerdas dirancang guna melayani dan membantu berbagai kegiatan masyarakat, terutama dalam mengelola sumber daya secara efisien dan memberikan kemudahan akses informasi kepada masyarakat hingga untuk mengantisipasi kejadian yang tidak terduga.
+            Dengan Smart City, berbagai macam data dan informasi dapat dikumpulkan dari sensor yang terpasang di setiap sudut kota, dianalisis oleh aplikasi cerdas, selanjutnya disajikan sesuai dengan kebutuhan pengguna melalui aplikasi yang dapat diakses oleh berbagai jenis gadget. Melalui gadget-nya, secara interaktif pengguna juga dapat menjadi sumber data, mereka mengirim informasi ke pusat data untuk dikonsumsi oleh pengguna yang lain.`,
             'link': '/lombasmartcity' 
         },
         {
             'title' : 'Piranti Cerdas, Sistem Benam dan IoT',
             'icon' : 'lni-cloud-network',
-            'desc': 'Short description for the ones who look for something new. Short description for the ones who look for something new.',
+            'desc': `Piranti cerdas (smart device) adalah sebuah hasil karya teknologi yang bekerja secara interaktif, adaptif, dan otomatis, sehingga mampu memberikan suatu solusi bagi permasalahan sehari-hari. Tingkat kecerdasan suatu piranti dapat dicapai dengan memanfaatkan suatu kecerdasan buatan (artificial intelligent) yang sesuai dengan kebutuhan pemecahan masalah.
+
+            Sementara itu sistem benam (embedded system) adalah sebuah piranti keras (hardware) yang bekerja berdasarkan perintah dari piranti lunak (software) dan didesain memiliki tujuan dan fungsi yang spesifik. Dengan menggabungkan konsep piranti cerdas dan sistem benam, maka diharapkan dapat terciptanya sebuah sistem kompleks memiliki kualitas yang baik. Dilengkapi dengan antarmuka yang baik dan penggunaan sensor sebagai input dari keadaan lingkungan, piranti cerdas dapat bekerja secara efisien dan memberikan manfaat yang besar bagi lingkungan dan masyarakat.
+            
+            Internet of Things (IoT) atau Internet untuk Segalanya adalah suatu konsep dimana objek tertentu punya kemampuan untuk mentransfer data lewat jaringan tanpa memerlukan adanya interaksi dari manusia ke manusia ataupun dari manusia ke perangkat komputer. IoT bertujuan untuk memperluas manfaat dari konektivitas internet yang tersambung secara terus-menerus, sehingga memiliki kemampuan untuk berbagi data, kendali jarak jauh, dan sebagainya, termasuk juga pada benda di dunia nyata.
+            
+            Tim peserta cabang lomba Piranti Cerdas, Sistem Benam, dan IoT ini diharapkan dapat mengembangkan suatu piranti cerdas yang menerapkan algoritma kecerdasan buatan tertentu, mengimplementasikannya dalam suatu sistem benam, serta memenghungkannya dengan jaringan internet untuk mengetahui dan memberikan respon adaptasi dengan situasi lingkungannya. Tingkat kecerdasan yang dimiliki oleh piranti tersebut dapat dikembangkan dari proses belajar mandiri ataupun dengan memanfaatkan data pengukuran jaringan sendor dan hasil belajar yang telah tersedia di lingkungan, yang diperoleh melalui keterhubungan dengan jaringan internet.
+            Piranti yang dibangun tersebut merupakan elemen sistem keterhubungan yang diharapkan dapat memberikan manfaat bagi peningkatan kesejahteraan masyarakat dalam bidang pertanian, perkebunan, kehutanan, peternakan, perikanan dan keluatan, peningkatan produksi pangan, sistem logistik, pembangkitan dan penghematan energi, instrumentasi dan kendali elektronik kewilayahan, transportasi cerdas, pengendalian dan mitigasi bencana, sistem keamanan cerdas, penyelematan lingkungan hidup, sistem aplikasi berbasis pemetaan geografis, dunia kesehatan, teknologi asistif untuk disabilitas atau pasien yang sakit, sistem perdagangan elektronik, literasi ekonomi digital, perangkat rumah tangga cerdas, automasi cerdas di industri, dan sebagainya.`,
             'link': '/lombaiot' 
         },
         {
             'title' : 'Pengembangan Aplikasi Permainan',
             'icon' : 'lni-game',
-            'desc': 'Short description for the ones who look for something new. Short description for the ones who look for something new.',
+            'desc': `Lomba pengembangan aplikasi permainan mendorong peserta untuk berkreasi dan berinovasi mengembangkan aplikasi permainan yang mampu berjalan dengan baik untuk memenuhi tujuan yang dicapai, memperlihatkan sisi pendidikan, mempunyai dampak dan manfaat, sekaligus mengandung unsur menghibur (entertainment value) dari sebuah permainan.`,
             'link': '/lombagamedev' 
         },
         {
             'title' : 'Desain Pengalaman Pengguna',
             'icon' : 'lni-brush',
-            'desc': 'Short description for the ones who look for something new. Short description for the ones who look for something new.',
+            'desc': `Lomba Desain Pengalaman Pengguna (UX Design) adalah lomba desain interaksi produk yang berorientasi pada kenyamanan dan kemudahan bagi pengguna. Dalam lomba ini yang menjadi fokus utama adalah pengalaman yang dirasakan pengguna ketika sedang menggunakan aplikasi tersebut secara menyeluruh. Para peserta lomba dituntut agar dapat merancang suatu antarmuka pengguna yang baik dengan menggunakan metode, sehingga didapatkan hasil desain aplikasi yang memiliki kualitas UX yang baik.`,
             'link': '/lombauiux' 
         },
         {
             'title' : 'Karya Tulis Ilmiah TIK',
             'icon' : 'lni-write',
-            'desc': 'Short description for the ones who look for something new. Short description for the ones who look for something new.',
+            'desc': `Lomba Karya Tulis Ilmiah mendorong peserta untuk menumbuhkembangkan sebuah karya tulis mahasiswa dalam bentuk penuangan gagasan atau ide kreatif yang bersifat visioner dan implementatif untuk mencari solusi atas permasalahan bangsa yang siap terbit dengan mengikuti kaidah penulisan ilmiah. Diharapkan peserta yang mengikuti cabang lomba ini mampu berinovasi dan menyajikan karya tulis ilmiah yang memberikan solusi dari segi TIK untuk k.........`,
             'link': '/lombaktitik' 
         },
         {
             'title' : 'Pengembangan Perangkat Lunak',
             'icon' : 'lni-display-alt',
-            'desc': 'Short description for the ones who look for something new. Short description for the ones who look for something new.',
+            'desc': `Lomba pengembangan perangkat lunak menguji kemampuan peserta dalam mengembangkan ide kreatif untuk memberikan solusi penyelesaian masalah di Indonesia dalam bentuk perangkat lunak berkualitas tinggi. Fokus pada kategori ini adalah aspek inovasi yang kreatif dan pemanfaatan TIK untuk mencerdaskan masyarakat Indonesia sehingga perangkat yang dihasilkan mampu memberikan dampak untuk kemandirian dan kecerdasan masyarakat umum. Dampak ini harus dibuktikan bukan hanya dalam bentuk argumentasi namun juga harus didukung dengan data. Produk perangkat lunak yang dihasilkan harus bisa dioperasikan sehingga dampak tersebut dapat terukur. Platform produk perangkat lunak tidak dibatasi. `,
             'link': '/lombasoftdev' 
         }
     ]
